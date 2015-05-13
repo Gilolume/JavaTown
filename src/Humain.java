@@ -11,6 +11,7 @@ public class Humain
 		this.nom = unNom;
 		this.boissonFavorite = uneBoissonFavorite;
 	}
+
 	public Humain(String unNom)
 	{
 		this.nom = unNom;
@@ -20,12 +21,12 @@ public class Humain
 	{
 		return this.nom + " - " + texte; 
 	}
-	
-	
+
 	public String quelEstTonNom()
 	{
 		return this.nom;
 	}
+
 	public String quelleEstTaBoisson()
 	{
 		return this.boissonFavorite;
@@ -36,6 +37,8 @@ public class Humain
 	}
 	public String boire ()
 	{
-		return "Ah un bon verre de "+quelleEstTaBoisson();
+		return "Ah un bon verre de "+quelleEstTaBoisson()+" GLOUPS !";
 	}
+
+
 }
