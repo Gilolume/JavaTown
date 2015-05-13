@@ -12,4 +12,24 @@ public class Humain
 		this.boissonFavorite = uneBoissonFavorite;
 	}
 
+	public String parler(String texte)
+	{
+		return this.nom + " - " + texte;
+	}
+
+	public String quelEstTonNom()
+	{
+		return this.nom;
+	}
+	
+	public String quelEstTaBoisson()
+	{
+		return this.boissonFavorite;
+	}
+	
+	public String presentation()
+	{
+		return "Bonjour, je me nomme "+ quelEstTonNom() +", ah merci pour le bon verre de " + quelEstTaBoisson() + " ! GLOUPS ! "; 
+	}
+
 }
