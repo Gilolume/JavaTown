@@ -6,9 +6,13 @@ public class Histoire {
 	{
 		// TODO Auto-generated method stub
 		
-		Humain humain = new Humain("Bacchus", "vin");
+		//Humain humain = new Humain("Bacchus", "vin");
+		Brigand brigand = new Brigand("Bacchus", "vin", "méchant", 3, 100, false);
 		
-		System.out.println(humain.presentation());
+		
+		System.out.println(brigand.presentation());
+		System.out.println(brigand.kidnapperDame("Neith"));
+		System.out.println(brigand.emprisonner("Ares"));
 	}
 
 }

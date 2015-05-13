@@ -36,14 +36,15 @@ public class Brigand extends Humain
 		this.prison = laPrison;
 	}
 	
-	public String kidnapperDame()
+	public String kidnapperDame(Dame uneDame)
 	{
 		this.damesEnleves ++;
-		return "Ah ah ! " + " nom de la dame " + ", tu est mienne désormais !";
+		return "Ah ah ! " + uneDame.quelEstTonNom() + ", tu est mienne désormais !";
 	}
 	
-	public String emprisonner()
+	public String emprisonner(Cowboy unCowboy)
 	{
-		return "Damned, je suis fait ! " + "non du cowboy" + ", tu m'as eu !";
+		this.prison = true;
+		return "Damned, je suis fait ! " + unCowboy.quelEstTonNom() + ", tu m'as eu !";
 	}
 }
