@@ -39,6 +39,11 @@ public class Brigand extends Humain
 	public String kidnapperDame()
 	{
 		this.damesEnleves ++;
-		return "Ah ah ! " + " nom de la dame " +  
+		return "Ah ah ! " + " nom de la dame " + ", tu est mienne désormais !";
+	}
+	
+	public String emprisonner()
+	{
+		return "Damned, je suis fait ! " + "non du cowboy" + ", tu m'as eu !";
 	}
 }
