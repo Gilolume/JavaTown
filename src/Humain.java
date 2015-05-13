@@ -4,7 +4,10 @@ public class Humain
 	private String nom;
 	private String boissonFavorite = "Eau";
 	
-	
+	public Humain(String unNom)
+	{
+		this.nom = unNom;
+	}
 	
 	public Humain(String unNom, String uneBoissonFavorite)
 	{
@@ -12,11 +15,6 @@ public class Humain
 		this.boissonFavorite = uneBoissonFavorite;
 	}
 
-	public Humain(String unNom)
-	{
-		this.nom = unNom;
-	}
-	
 	public String parler(String texte)
 	{
 		return this.nom + " - " + texte; 
